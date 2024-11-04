@@ -8,9 +8,15 @@
 	<style type="text/css">
 		
 		#hammer{
-			width:300px;
-			height:50px;
-			background-color:whitesmoke;
+			width:100px;
+			height:100px;
+			background-image:url(https://upload.wikimedia.org/wikipedia/en/b/bb/Emoji_hammer.png);
+			background-size:contain;
+		}
+		
+
+		#hammer:hover{
+			transform:rotate(-45deg);
 		}
 
 
@@ -29,15 +35,31 @@
 				transform:rotate(-8deg);
 			}
 
+			5%{
+				transform: rotate(8deg);
+			}
+
 			10%{
+				transform: rotate(-8deg);
+			}
+
+			15%{
 				transform: rotate(8deg);
 			}
 
 			20%{
-				transform:rotate(-8deg);
+				transform: rotate(-8deg);
+			}
+
+			25%{
+				transform: rotate(8deg);
 			}
 
 			30%{
+				transform:rotate(-8deg);
+			}
+
+			35%{
 				transform:rotate(8deg);
 			}
 
@@ -45,36 +67,166 @@
 				transform:rotate(-8deg);
 			}
 
-			50%{
+			45%{
 				transform: rotate(8deg);
+			}
+
+			50%{
+				transform: rotate(-8deg);
 			}
 
 			60%{
-				transform: rotate(-8deg);
+				transform: rotate(8deg);
 			}
 
 			70%{
-				transform: rotate(8deg);
-			}
-
-			80%{
 				transform: rotate(-8deg);
 			}
 
-			90%{
+			80%{
 				transform: rotate(8deg);
 			}
+
+			90%{
+				transform: rotate(-8deg);
+			}
+
 			100%{
 				transform:rotate(0deg);
 			}
 		}
+		body{
+			margin:0px;
+		
+		}
+
+		#l{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:25%;
+			color:black;
+		}
+		#a{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:30.4%;
+			color:black;
+		}
+		#i{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:42.6%;
+			color:black;
+		}	
+		#n{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:34.4%;
+			color:black;
+		}		
+		#a1{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:38.6%;
+			color:black;
+		}
+		#blake{
+			font-size:100px;
+			position: absolute;
+			top: 230px;
+			transition: 3s;
+			left: 29%;
+			color:black;
+		}
+
+		#soden{
+			font-size: 100px;
+			position: absolute;
+			top: 230px;
+			transition: 3s;
+			left: 52.4%;
+			color:black;
+		}
+
+		#next{
+			height: 640px;
+			width: 640px;
+			background-image: url(https://cdn.pixabay.com/photo/2016/01/20/17/19/flower-1151970_640.png);
+			background-size: contain;
+		}
+
+		#flower{
+			height: 196px;
+			width: 185px;
+			background-size: contain;
+			background-image: url(file:///Users/lanaib/.Trash/images.png);
+			position: absolute;
+			top: 400px;
+			left: 415px;
+		}
+
+		#flower:hover{
+			transform: scale(1.2);
+		}
+
+		#fleur{
+			height: 189px;
+			width: 185px;
+			background-size: contain;
+			background-image: url(file:///Users/lanaib/.Trash/360_F_785057589_7ZH3TdmTuFukvCWuz9Sw4LeYAa08wVc2.png);
+			position: absolute;
+			top: 400px;
+			left: 785px;
+		}
+
+		#fleur:hover{
+			transform: scale(1.2);
+		}
+
+		#brick{
+			height: 30px;
+			width: 100%;
+			background-color: whitesmoke;
+			top: 750px;
+			position: fixed;
+		}
+
+		#welcome{
+			position: fixed;
+			top: 750px;
+			left: 560px;
+		}
+
 	</style>
 </head>
 <body>
 <center>
 	<div id="background">
-	<div id="hammer"></div>
+	<div id="hammer" onclick="hideDiv()"></div>
 	</div>
+	<div id="l">L</div>
+	<div id="a">a</div>
+	<div id="n">n</div>
+	<div id="a1">a</div>
+	<div id="i">i</div>
+	<div id="blake">Blake-</div>
+	<div id="soden">Soden</div>
+	<div id="next" style="display: none;"></div>
+	<div id="flower"></div>
+	<div id="fleur"></div>
+	<div id="brick"></div>
+	<div id="welcome">(*^3^)/~☆ welcome to my website (*^3^)/~☆</div>
+
 </center>
 
 <script type="text/javascript">
@@ -84,9 +236,28 @@
 	}
 
 	hammer.addEventListener("click", function(){
-		background.style.animationName="shake"
+		background.style.animationName="shake"	
+	})
+	
+	function hideDiv() {
+    	document.getElementById('hammer').style.display='none';
+	}
 
-		setTimeout(removeShake,1000)
+	hammer.addEventListener("click", function(){
+		l.style.left = "-3000px"
+		a.style.top = "3000px"
+		n.style.top = "-3000px"
+		a1.style.top = "2000px"
+		i.style.left = "3000px"
+		i.style.top = "-2000px"
+		blake.style.top = "3000px"
+		blake.style.left = "3000px"
+		soden.style.top = "3000px"
+		soden.style.left = "-3000px"
+		// console.log("hi lanai!!")
+
+		setTimeout(removeFunction)
+
 	})
 </script>
 

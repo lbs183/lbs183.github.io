@@ -1,0 +1,135 @@
+<!:DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	#left{
+		width: 50%;
+		height: 100%;
+		background-color: powderblue;
+		position: absolute;
+
+		animation-name: lift;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes lift{
+		0%{rotate: 0deg}
+		100%{rotate: 720deg}
+	}
+
+	#background{
+		width: 100%;
+		height: 100%;
+		background-color: aliceblue;
+		position: absolute;
+
+		animation-name: backspoin;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes backspoin{
+		0%{rotate: 0deg}
+		100%{rotate: -720deg}
+	}
+
+	#soin{
+		width: 100%;
+		height: 50%;
+		background-color: lavenderblush;
+		position: absolute;
+
+		animation-name: spin;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	}
+
+		@keyframes spin{
+			0%{rotate: 0deg}
+			100%{rotate: 720deg}
+		}
+
+	#lucky{
+		width:100px;
+		height:100px;
+		background-color: blue;
+		position: absolute;
+
+		animation-name: swim;
+		animation-duration:5s;
+		animation-iteration-count: infinite;
+	}
+	
+	@keyframes swim{
+		0%{
+			left: 10px;
+			top: 10px;
+			background-color:blue;
+		}
+		20%{
+			background-color:lightblue;
+		}
+		40%{
+			background-color:lightsteelblue;
+		}
+		60%{
+			background-color:mediumpurple;
+		}
+		80%{
+			background-color:rebeccapurple;
+		}
+		100%{
+			left: 1000px;
+			top: 600px;
+			background-color: blue;
+		}	
+	}
+
+	#picky{
+		width: 100px;
+		height: 100px;
+		background-color: palevioletred;
+		position: absolute;
+
+		animation-name: move;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes move{
+		0%{
+			left:1000px;
+			top:10px ;
+		}
+		20%{
+			background-color:palevioletred;
+		}
+		40%{
+			background-color:deeppink;
+		}
+		60%{
+			background-color:hotpink;
+		}
+		80%{
+			background-color:lightpink;
+		}
+		100%{
+			left: 10px;
+			top: 600px;
+			background-color: palevioletred;
+		}
+	}
+
+</style>	
+</head>
+<body>
+	<div id="background"></div>
+	<div id="left"></div>
+	<div id="soin"></div>
+	<div id="lucky"></div>
+	<div id="picky"></div>
+
+</body>
+</html>

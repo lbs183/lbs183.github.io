@@ -1,48 +1,299 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<style type="text/css">
-		#projects{
-			width:300px;
-			height:300px;
-			background-image:url(https://icanbecreative.com/resources/files/articles/deadpool-movie-photoshop-tutorial/Deadpool-Logo-movie-Transparent-png-trailer.png);
-				background-size: contain;
-				transition: 5s;
 
-			}
-		#projects:hover{
-			transform: rotate(3600deg);
-			transition:10s;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+		
+		#hammer{
+			width:100px;
+			height:100px;
+			background-image:url(https://upload.wikimedia.org/wikipedia/en/b/bb/Emoji_hammer.png);
+			background-size:contain;
 		}
 		
-		#journal{
-			width:280px;
-			height:280px;
-			background-image:url(https://seeklogo.com/images/S/spider-man-comic-new-logo-322E9DE914-seeklogo.com.png);
-					background-size: contain;
-					transition:5s;
+
+		#hammer:hover{
+			transform:rotate(-45deg);
 		}
 
-		#journal:hover{
-			transform: rotate(3600deg);
-			transition: 10s;
+
+		#background{
+			width:100%;
+			height:800px;
+			background-color:lightsteelblue;
+
+/*			animation-name:shake;*/
+			animation-duration:1s;
 		}
+
+		@keyframes shake{
+
+			0%{
+				transform:rotate(-8deg);
+			}
+
+			5%{
+				transform: rotate(8deg);
+			}
+
+			10%{
+				transform: rotate(-8deg);
+			}
+
+			15%{
+				transform: rotate(8deg);
+			}
+
+			20%{
+				transform: rotate(-8deg);
+			}
+
+			25%{
+				transform: rotate(8deg);
+			}
+
+			30%{
+				transform:rotate(-8deg);
+			}
+
+			35%{
+				transform:rotate(8deg);
+			}
+
+			40%{
+				transform:rotate(-8deg);
+			}
+
+			45%{
+				transform: rotate(8deg);
+			}
+
+			50%{
+				transform: rotate(-8deg);
+			}
+
+			60%{
+				transform: rotate(8deg);
+			}
+
+			70%{
+				transform: rotate(-8deg);
+			}
+
+			80%{
+				transform: rotate(8deg);
+			}
+
+			90%{
+				transform: rotate(-8deg);
+			}
+
+			100%{
+				transform:rotate(0deg);
+			}
+		}
+		body{
+			margin:0px;
+		
+		}
+
+		#l{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:25%;
+			color:black;
+		}
+		#a{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:30.4%;
+			color:black;
+		}
+		#i{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:42.6%;
+			color:black;
+		}	
+		#n{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:34.4%;
+			color:black;
+		}		
+		#a1{
+			font-size:100px;
+			position:absolute;
+			top:150px;
+			transition:3s;
+			left:38.6%;
+			color:black;
+		}
+		#blake{
+			font-size:100px;
+			position: absolute;
+			top: 230px;
+			transition: 3s;
+			left: 29%;
+			color:black;
+		}
+
+		#soden{
+			font-size: 100px;
+			position: absolute;
+			top: 230px;
+			transition: 3s;
+			left: 52.4%;
+			color:black;
+		}
+
+		#next{
+			height: 640px;
+			width: 640px;
+			background-image: url(https://cdn.pixabay.com/photo/2016/01/20/17/19/flower-1151970_640.png);
+			background-size: contain;
+		}
+
+		#flower{
+			height: 196px;
+			width: 185px;
+			background-size: contain;
+			background-image: url(flower.png);
+			position: absolute;
+			top: 400px;
+			left: 445px;
+		}
+
+		#flower:hover{
+			transform: scale(1.2);
+		}
+
+		#fleur{
+			height: 189px;
+			width: 185px;
+			background-size: contain;
+			background-image: url(fleur.png);
+			position: absolute;
+			top: 400px;
+			left: 785px;
+		}
+
+		#fleur:hover{
+			transform: scale(1.2);
+		}
+
+		#brick{
+			height: 30px;
+			width: 100%;
+			background-color: whitesmoke;
+			top: 750px;
+			position: fixed;
+		}
+
+		#welcome{
+			position: fixed;
+			top: 750px;
+			left: 560px;
+		}
+
+		#first{
+			font-family: "Henny Penny";
+			font-weight: 100px;
+			font-style: normal;
+			position: absolute;
+			top: 110px;
+			left: 380px;
+			font-size: 100px;
+		}
+
+		#lastname{
+			font-family: "Henny Penny";
+			font-weight: 100px;
+			font-style: normal;
+			position: absolute;
+			top: 230px;
+			left: 430px;
+			font-size: 100px;
+		}
+
+		#nameContainer{
+			opacity:0;
+			transition: 2s;
+		}
+
 	</style>
-
 </head>
 <body>
+<center>
+	<div id="background">
+	<div id="hammer" onclick="hideDiv()"></div>
+	</div>
+	<div id="l">L</div>
+	<div id="a">a</div>
+	<div id="n">n</div>
+	<div id="a1">a</div>
+	<div id="i">i</div>
+	<div id="blake">Blake-</div>
+	<div id="soden">Soden</div>
+	<div id="next" style="display: none;"></div>
+	<a href="projects.html"><div id="flower"></div></a>
+	<a href="journal.html"><div id="fleur"></div></a>
+	<div id="brick"></div>
+	<div id="welcome">(*^3^)/~☆ welcome to my website (*^3^)/~☆</div>
+	<div id="nameContainer">
+	<div id="first">Lanai</div>
+	<div id="lastname">Blake-Soden</div>
+</div>
 
-projects
-<a href="projects.html">
-	<div id="projects"></div>
-</a>
+</center>
 
-<br>
-journal
-<a href="journal.html">
-	<div id="journal"></div>
-</a>
+<script type="text/javascript">
+
+	function removeShake (){
+		background.style.animationName=""
+	}
+
+	hammer.addEventListener("click", function(){
+		background.style.animationName="shake"	
+	})
+	
+	function hideDiv() {
+    	document.getElementById('hammer').style.display='none';
+	}
+
+	hammer.addEventListener("click", function(){
+		l.style.left = "-3000px"
+		a.style.top = "3000px"
+		n.style.top = "-3000px"
+		a1.style.top = "2000px"
+		i.style.left = "3000px"
+		i.style.top = "-2000px"
+		blake.style.top = "3000px"
+		blake.style.left = "3000px"
+		soden.style.top = "3000px"
+		soden.style.left = "-3000px"
+				nameContainer.style.opacity="1"
+
+		// console.log("hi lanai!!")
+
+
+		setTimeout(removeFunction)
+
+	})
+</script>
 
 </body>
 </html>

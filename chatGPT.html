@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Moving Squares (CSS)</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .square {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            animation: move 10s infinite linear;
+        }
+
+        /* Keyframe for horizontal and vertical movement */
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50vw, 0);
+            }
+            50% {
+                transform: translate(50vw, 50vh);
+            }
+            75% {
+                transform: translate(0, 50vh);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        /* Different squares with different timings and directions */
+        .square:nth-child(1) {
+            top: 10vh;
+            left: 10vw;
+            animation-duration: 12s;
+            background-color: orange;
+        }
+
+        .square:nth-child(2) {
+            top: 20vh;
+            left: 30vw;
+            animation-duration: 14s;
+            background-color: blue;
+        }
+
+        .square:nth-child(3) {
+            top: 40vh;
+            left: 50vw;
+            animation-duration: 16s;
+            background-color: green;
+        }
+
+        .square:nth-child(4) {
+            top: 60vh;
+            left: 70vw;
+            animation-duration: 18s;
+            background-color: purple;
+        }
+
+        .square:nth-child(5) {
+            top: 80vh;
+            left: 90vw;
+            animation-duration: 20s;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+
+</body>
+</html>
