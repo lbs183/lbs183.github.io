@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">	
+	
 	<style type="text/css">
-		#home{
-			width:400px;
-			height:300px;
-			background-image:url(https://lh3.googleusercontent.com/proxy/Igsk5x_u_BFvmFyjvg5TH6UV23Vbe1YFvNy-lLx1TUgLqc94c9moO6dwZ99QnVT9bjEKAYcxwRMEZVIKaFpBWTHBwcLzyea2xxDbP4wP9QLzbYEquGmtlsTQLnchamYzY7uwoXm8);
-						transition:5s;
-						background-size: contain;
-						margin: -30px;
+		#background{
+			height: 800px;
+			width: 100%;
+			background-color: lightsteelblue;
+			position: absolute;
+			top: 0px;
+			left: 0px;
 		}
 
-		#home:hover{
-			transform:rotate(3600deg);
-			transition:10s;
+		#projet{
+			font-family: "Charm", cursive;
+			font-weight: 100;
+			font-style: normal;
+ 			font-size: 100px;
+ 			margin: -30px;
 		}
 
-		#journal{
-			width:300px;
-			height:300px;
-			background-image:url(https://seeklogo.com/images/S/spider-man-comic-new-logo-322E9DE914-seeklogo.com.png);
-					transition:5s;
-					background-size: contain;
+		#animation{
+			position: absolute;
+			left: 40px;
+			text-decoration: underline;
 		}
 
-		#journal:hover{
-			transform: rotate(3600deg);
-			transition: 10s;
+		#jumpscare{
+			position: absolute;
+			left: 40px;
+			text-decoration: underline;
+		}
+		
+		#hammer{
+			position: absolute;
+			left: 40px;
+			text-decoration: underline;
+		}
+
+		#click{
+			position: absolute;
+			left: 40px;
+			text-decoration: underline;
+		}
+
+		#kim{
+			position: absolute;
+			left: 40px;
+			text-decoration: underline;
 		}
 	</style>
 
 </head>
 <body>
-
-home
-<a href="index.html">
-	<div id="home"></div>
-</a>
-
+<div id="background">
+<h4><a href="index.html"><div id="home"><-- home</div></a></h4>
 <br>
+<center>
+<div id="projet">Projects 🌺</div> </center>
+<ol>
+	<li><a href="animation.html"><div id="animation">Animation project</div></a></li>
+	<br>
+	<br>
+	<li><a href="jumpscare1.html"><div id="jumpscare">Jumpscare project</div></a></li>
+	<br>
+	<br>
+	<li><a href="hammerSample.html"><div id="hammer">This is the original sample of the hammer on the home page</div></a></li>
+	<br>
+	<br>
+	<li><a href="clickShake.html">This is the original sample of the screen shaking after a div is clicked on the home page<div id="click"></div></a></li>
+	<br>
+	<br>
+	<li><a href="auntieKim.html">I made this project for my aunt when she visited for my birthday<div id="kim"></div></a></li>
 
-journal
-<a href="journal.html">
-	<div id="journal"></div>
-</a>
+</div>
 
 
 </body>

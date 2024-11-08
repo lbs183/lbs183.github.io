@@ -4,77 +4,71 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">	
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">	
 	
 	<style type="text/css">
-		#home{
-			width:400px;
-			height:300px;
-			background-image:url(https://lh3.googleusercontent.com/proxy/Igsk5x_u_BFvmFyjvg5TH6UV23Vbe1YFvNy-lLx1TUgLqc94c9moO6dwZ99QnVT9bjEKAYcxwRMEZVIKaFpBWTHBwcLzyea2xxDbP4wP9QLzbYEquGmtlsTQLnchamYzY7uwoXm8);
-						transition:5s;
-						background-size: contain;
-						margin: -30px;
-		}
-
-		#home:hover{
-			transform:rotate(3600deg);
-			transition:10s;
-		}
-
-		#projects{
-			width:300px;
-			height:300px;
-			background-image:url(https://pngimg.com/d/deadpool_PNG15.png);
-				transition: 5s;
-				background-size: contain;
-		}
-
-		#projects:hover{
-			transform: rotate(3600deg);
-			transition:10s;
-		}
-
+		
 		h1{
-			font-family: "Love Ya Like A Sister", cursive;
-  			font-weight: 400;
+			font-family: "Euphoria Script", cursive;
+  			font-weight: 100;
  			font-style: normal;
+ 			font-size: 100px;
+ 			margin: 10px;
 }
 		
 
 		h3{
-			font-family: "Love Ya Like A Sister", cursive;
-  			font-weight: 400;
+			font-family: "Charm", cursive;
+  			font-weight: 100;
  			font-style: normal;
+ 			margin: 10px;
 }
 		
 
 		li{
-			font-family: "Love Ya Like A Sister", cursive;
-  			font-weight: 400;
+			font-family: "Charm", cursive;
+  			font-weight: 100;
  			font-style: normal;
 }
-		
+		#background{
+			height: 1090px;
+			width: 100%;
+			background-color: lightsteelblue;
+			position: absolute;
+			top: -1px;
+			left:-1px;
+		}
+
+		#brick{
+			height: 30px;
+			width: 10000px;
+			background-color: lightpink;
+			top: 750px;
+			position: fixed;
+			opacity: 95%;
+			left: 0px;
+		}
+
+		#welcome{
+			position: fixed;
+			top: 750px;
+			left: 560px;
 	
 	</style>
 
 </head>
 <body>
+<div id="background">
 
-home
-<a href="index.html">
-	<div id="home"></div>
-</a>
+<h4><a href="index.html"><div id="index"><-- home</div></a></h4>
 
-<br>
-
-projects
-<a href="projects.html">
-	<div id="projects"></div>
-</a>
-
-<h1>journal ⁉️</h1>
-
-<h3>what i've learned in cs1</h3>
+<center>
+	<h1>Journal 🌸</h1>
+</center>
+<h3>first entry: what i've learned in cs1</h3>
 
 <ol>
 
@@ -86,7 +80,7 @@ projects
 </ol>
 
 
-<h3>second entry</h3>
+<h3>second entry: error analysis</h3>
 
 <ol>
 
@@ -97,7 +91,6 @@ projects
 <h3>third entry: publishing website</h3>
 
 <ol>
-
 	<li>cd ./desktop/lbs183.github.io</li>
 		<li>git add .</li>
 		<li>git commit -m "message"</li>
@@ -105,5 +98,27 @@ projects
 
 </ol>
 
+<h3>fourth entry: animation</h3>
+
+<ol>
+	<li>we made animations and after i made my squares change color and move around the screen i just kept adding more and more divs to make it look chaotic and cool. this also gave me an idea for my jumpscare but it's something that <br> will take time and i also have no idea how to do it other than making some rectangles move across the screen. we'll probably learn more about what i need later in the year but i might make a lab when i finish making my journal <br> and projects page look the same as my index page.</li>
+</ol>
+
+<h3>fifth entry: jumpscare</h3>
+
+<ol>
+	<li>we started doing our jumpscares. i'm not sure if this is the righ timeline because i'm writing this after the fact but thats the last thing i remember doing after the animations so... anyway, my idea is a counter that jumpscares you if you say the wrong thing. there will be different colored(ish) blocks that move across the screen at different speeds and maybe sizes but probably not and you have to count how many of a certain color cross the screen. the thing that makes it hard is the fact that all the blocks are different shades of green. some look very different from the other ones but the one i'm choosing to be the subject is evry similar to another color so hopefully it makes people get it wrong. just got this idea, the answer is going to be 0 so if they count any, they'll be wrong. that way more people will be jumpscared. lowkey by jumpscare isn't good and i also don't remember how to do it because i kept changing my idea on the day that we learned javascript and whatnot. i'll make a lab for that.</li>
+</ol>
+
+<h3>sixth entry: cohesiveness</h3>
+
+<ol>
+	<li>today i spent time making everything look nice. i didn't get very far because everything takes so much time and the slightest error can make your entire code stop working so yk... but i also spent a lot of time writing journal entries. that stupid home button in the top corner took me way too long and pmo way too much so i just gave up and am leaving it where it is unless i can figure out how to make it not that close to the side of the screen. i'm gonna work on <br> my projects page and push and whatnot so yeah that's what we did today.</li>
+</ol>
+
+</div>
+<div id="brick"></div>
+<center>
+<div id="welcome">(*^3^)/~☆ welcome to my journal ☆~\(^Ɛ^*)</div> </center>
 </body>
 </html>
