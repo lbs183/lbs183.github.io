@@ -6,10 +6,12 @@
 
 #background{
 	background-image: url(https://images.template.net/377879/Cartoon-Road-Background-edit-online-2.jpg);
-	height:761px ;
-	width: 1423px;
+	height:100% ;
+	width: 100%;
 	background-size: contain;
-	position: absolutes;
+	position: absolute;
+	top: 30px;
+	left: 0px;
 }		
 
 #red{
@@ -17,6 +19,42 @@
 	height: 100px;
 	width: 150px;
 	margin: 10px;
+	position: absolute;
+	top: 50px;
+	left: -160px;
+	animation-name: red;
+	animation-duration: 6s;
+	animation-iteration-count: 3;
+}
+
+@keyframes red{
+	0%{
+		top: 50px;
+		left: -160px;
+	}
+
+	10%{
+		top: 50px;
+		left: -160px;
+	}
+	25%{
+		top: 50px;
+		left: 1460px;
+	}
+
+	40%{
+		top: 400px;
+		left: 1460px;
+	}
+
+	75%{
+		top: 400px;
+		left: -160px;
+	}
+
+	100%{
+		left: -160px;
+	}
 }
 
 #orange{
@@ -24,6 +62,39 @@
 	height: 100px;
 	width: 150px;
 	margin: 10px;
+	position: absolute;
+	left: 1460px;
+	animation-name: orange;
+	animation-duration: 6s;
+	animation-iteration-count: 3;
+}
+
+@keyframes orange{
+	0%{
+		top: 100px;
+		left: 1460px;
+	}
+
+	10%{
+		top: 100px;
+		left: 1460px;
+	}
+	30%{
+		top: 100px;
+		left: -160px;
+	}
+	40%{
+		top: 500px;
+		left: -160px;
+	}
+	80%{
+		top: 300px;
+		left: 1460px;
+	}
+	100%{
+		top: 100px;
+		left: 1460px;
+	}
 }
 
 #yellow{
@@ -31,6 +102,39 @@
 	height: 100px;
 	width: 150px;
 	margin: 10px;
+	position: absolute;
+	top: 600px;
+	left: 1460px;
+	animation-name: yellow;
+	animation-iteration-count: 3;
+	animation-duration: 6s;
+}
+
+@keyframes yellow{
+	0%{
+		top: 600px;
+		left: 1460px;
+	}
+
+	40%{
+		top: 600px;
+		left: -160px;
+	}
+
+	50%{
+		top: 300px;
+		left: -160px;
+	}
+
+	76%{
+		top: 200px;
+		left: 1460px;
+	}
+
+	100%{
+		top: 500px;
+		left: 1460px;
+	}
 }
 
 #blue{
@@ -38,20 +142,150 @@
 	height: 100px;
 	width: 150px;
 	margin: 10px;
+	position: absolute;
+	top: 360px;
+	left: -160px;
+	animation-name: blue;
+	animation-iteration-count: 3;
+	animation-duration: 6s;
 }
 
-#purple{
+@keyframes blue{
+	0%{
+		top: 360px;
+		left: -170px;
+	}
+
+	10%{
+		top: 360px;
+		left: -170px;
+	}
+
+	50%{
+		top: 360px;
+		left: 1560px;
+	}
+
+	100%{
+		top: 360px;
+		left: -170px;
+	}
+}
+
+#green{
 	background-color: darkolivegreen;
 	height: 100px;
 	width: 150px;
 	margin: 10px;
+	position: absolute;
+	top: 470px;
+	left: 1450px;
+	animation-name: green;
+	animation-iteration-count: 3;
+	animation-duration: 6s;
 }
 
-#pink{
+@keyframes green{
+	0%{
+		top: 470px;
+		left: 1450px;
+	}
+
+	10%{
+		top: 470px;
+		left: 1450px;
+	}
+
+	45%{
+		top: 100px;
+		left: -170px;
+	}
+
+	70%{
+		top: 100px;
+		left: 1450px;
+	}
+
+	100%{
+		top: 650px;
+		left: -160px;
+	}
+}
+
+#purple{
 	background-color: green;
 	height: 100px;
 	width: 150px;
 	margin: 10px;
+	top: 2000px;
+	left: -170px;
+	position: absolute;
+	animation-name: purple;
+	animation-iteration-count: 1;
+	animation-duration: 10s;
+}
+
+@keyframes purple{
+	0%{
+		top: 650px;
+		left: -170px;
+	}
+
+	35%{
+		top: 650px;
+		left: 1450px;
+	}
+
+	75%{
+		top: 2000px;
+		left: 1450px;
+	}
+
+	100%{
+		top: 2000px;
+		left: 1450px;
+	}
+}
+
+#clock{
+	height: 31px;
+	width: 100%;
+	background-color: whitesmoke;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#rules{
+	position: absolute;
+	top: 5px;
+	left: 580px;
+}
+
+#start{
+	position: absolute;
+}
+
+#wrong{
+	position: absolute;
+	top: 5px;
+	left: 1000px;
+}
+
+#right{
+	position: absolute;
+	top: 5px;
+	left: 990px;
+}
+
+/*#momo{
+	height: 800px;
+	width: 100%;
+	background-image: url(momo.png);
+	position: absolute;
+	left: 190px;
+	top: 0px;
+	scale: 1.3;
 }
 
 </style>
@@ -62,10 +296,22 @@
 <div id="background"></div>
 <div id="red"></div>
 <div id="orange"></div>
+<div id="yellow"></div>
+<div id="green"></div>
 <div id="blue"></div>
 <div id="purple"></div>
-<div id="yellow"></div>
-<div id="pink"></div>
+<div id="clock"></div>
+<div id="rules">how many "green" blocks cross the screen?</div>
+<a href="jumpscare1.html"><div id="start">restart</div></a>
+<div id="wrong">-- 2 -- 3 -- 4 -- 5 -- 6 -- 7 -- 8 -- 9 -- 10 -- 11 -- 12</div>
+<div id="right">1</div>
+<div id="momo"></div>
+
+<script type="text/javascript">
+
+	document.addEventListener("click", function(){
+		background.style.backgroundImage: url(momo.png);
+	
 
 </body>
 </html>
