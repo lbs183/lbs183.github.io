@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	
+#win{
+	height: 10000000px;
+	width: 100%;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFItvq-KrZcbP8HB_O2E4Le3Nr_G-1gNZ2NA&s);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+    <audio src="winner.mp3" id="sound"></audio>
+
+<div id="win"></div>
+
+<script type="text/javascript">
+	
+	document.body.addEventListener("click", function(){
+		sound.play()
+		var audio = document.getElementById("myAudio");
+audio.volume = 6.0;
+	})
+
+
+</script>
+</body>
+</html>

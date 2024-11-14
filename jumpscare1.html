@@ -278,14 +278,15 @@
 	left: 990px;
 }
 
-/*#momo{
+.momo{
 	height: 800px;
 	width: 100%;
 	background-image: url(momo.png);
 	position: absolute;
-	left: 190px;
-	top: 0px;
-	scale: 1.3;
+	left: 500px;
+	top: 100px;
+	/*scale: 1.3;*/
+	opacity:0;
 }
 
 </style>
@@ -304,14 +305,19 @@
 <div id="rules">how many "green" blocks cross the screen?</div>
 <a href="jumpscare1.html"><div id="start">restart</div></a>
 <div id="wrong">-- 2 -- 3 -- 4 -- 5 -- 6 -- 7 -- 8 -- 9 -- 10 -- 11 -- 12</div>
-<div id="right">1</div>
-<div id="momo"></div>
+<a href="victory.html"><div id="right">1</div></a>
+<audio src="scream.mp3" id="sound"></audio>
 
 <script type="text/javascript">
 
-	document.addEventListener("click", function(){
-		background.style.backgroundImage: url(momo.png);
-	
+	wrong.addEventListener("click", function(){
+		background.style.backgroundImage = "url(momo.png)";
+		sound.play()
+		var audio = document.getElementById("myAudio");
+audio.volume = 6.0;
+	})
+
+</script>
 
 </body>
 </html>
