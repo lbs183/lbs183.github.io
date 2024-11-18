@@ -4,11 +4,18 @@
 	
 <style type="text/css">
 	
-#squares{
+.squares{
 	height: 100px;
 	width: 100px;
 	background-image: url(stuffedanimal.jpeg);
-	background-size: contain;
+	background-size:contain;
+	display: inline-block;
+}
+
+.squares:hover{
+	height:150px;
+	width: 150px;
+	background-image: url(woof.png);
 }
 
 
@@ -25,7 +32,9 @@
 		square.classList.add("squares")
 	}
 
-	setInterval(addSquare, 1000)
+	setInterval(addSquare, 5)
+
+</script>
 
 </body>
 </html>
