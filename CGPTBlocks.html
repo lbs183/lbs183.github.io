@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Blocks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="block" id="block1"></div>
+        <div class="block" id="block2"></div>
+        <div class="block" id="block3"></div>
+    </div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+let blocks = document.querySelectorAll('.block');
+let selectedBlock = null;
+let offsetX = 0;
+let offsetY = 0;
+
+blocks.forEach(block => {
+    block.addEventListener('mousedown', (e) => {
+        selectedBlock = block;
+        offsetX = e.clientX - block.offsetLeft;
+        offsetY = e.clientY - block.offsetTop;
+        block.style.zIndex = 10; // Bring the block to the front
+    });
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (selectedBlock) {
+        let x = e.clientX - offsetX;
+        let y = e.clientY - offsetY;
+        selectedBlock.style.left = `${x}px`;
+        selectedBlock.style.top = `${y}px`;
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    if (selectedBlock) {
+        selectedBlock.style.zIndex = ''; // Reset zIndex
+        selectedBlock = null;
+    }
+});
+</script>

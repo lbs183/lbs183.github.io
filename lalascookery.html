@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lana's Cookery</title>
+	<style type="text/css">
+	
+		#playGame{
+			width: 200px;
+			height: 100px;
+			border-radius: 25px;
+			background-color: whitesmoke;
+			position: absolute;
+			top: 660px;
+			left: 620px;
+			font-size: 40px;
+			text-align: center;
+			line-height: 100px;
+			cursor: pointer;
+		}
+
+		#playGame:hover{
+			scale: 1.05;
+		}
+
+		#background{
+			width: 100%;
+			height: 800px;
+			background-size: contain;
+			background-image: url(cookery.jpg);
+			position: absolute;
+			left: 0;
+			top: 0;
+			animation-duration: 2s;
+		}
+		
+		#home {
+			position: absolute;
+			text-decoration: underline;
+			width: 60px;
+			height: 20px;
+			background-color: whitesmoke;
+		}
+
+		@keyframes slide{
+			0%{
+
+			}
+			100%{
+				left: -2000px;
+			}
+		}
+
+		@keyframes slide2{
+			0%{
+
+			}
+			100%{
+				left: -2000px;
+			}
+		}
+
+		#cookery{
+			width: 3000px;
+			height: 800px;
+			background-image: url(cookery2.jpg);
+			background-size: contain;
+			position: absolute;
+			left: 1420px;
+			top: 0px;
+			animation-duration: 2s;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	
+	<div id="background"></div>
+<center>
+	<div id="playGame">PLAY</div>
+	<a href="index.html"><div id="home"><--home</div></a></center>
+	<div id="cookery"></div>
+
+
+<script type="text/javascript">
+	
+
+
+	function addLink(){
+	window.open("recipes.html")
+
+	}
+
+	playGame.addEventListener("click", 
+	function (){
+	background.style.animationName="slide"
+	cookery.style.animationName="slide2"
+	setTimeout(addLink, 1000)
+	})
+</script>
+
+
+
+</body>
+</html>

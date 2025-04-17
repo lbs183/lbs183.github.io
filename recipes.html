@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lana's Cookery Recipes Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+<style type="text/css">
+	.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+	.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+	
+
+	#background{
+		height: 1700px;
+		width: 100%;
+		background-image: url(cookery2.jpg);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		animation-duration: 2s;
+	}
+
+	@keyframes slide2{
+			0%{
+
+			}
+			100%{
+				top: -2000px;
+			}
+		}
+
+	#welcome{
+		height: 80px;
+		width: 630px;
+		background-color: white;
+		position: absolute;
+		left: 420px;
+		top: 20px;
+		font-size: 40px;
+		border-radius: 25px;
+		outline-style: dotted;
+		outline-color: black;
+		outline-width: 5px;
+		font-family: "Special Gothic Expanded One", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		text-align: center;
+		line-height: 78px;
+	}
+
+	#tutorial{
+		position: absolute;
+		top: 750px;
+		font-size: 12px;
+		height: 25px;
+		width: 65px;
+		background-color: white;
+		text-align: center;
+		border-radius: 5px;
+		font-family: "Special Gothic Expanded One", sans-serif;
+		font-weight: 4;
+		font-style: normal;
+		line-height: 23px;
+		cursor: pointer;
+	}
+
+	#soup{
+		width: 350px;
+		height: 500px;
+		background-color: white;
+		position: absolute;
+		top: 170px;
+		left: 109px;
+		border-radius: 50px;
+		text-align: center;
+		font-size: 80px;
+		cursor: pointer;
+		font-family: "Lavishly Yours", cursive;
+		font-weight: 4;
+		color: black;
+	}
+
+	#soup:hover{
+		scale: 1.05;
+		outline-style: double;
+		outline-color: grey;
+		outline-width: 4px;
+
+	}
+
+	#soupText{
+		font-family: "Special Gothic Expanded One", sans-serif;
+		font-size: 20px;
+		line-height: 300px;
+	}
+
+	#pizza{
+		width: 350px;
+		height: 500px;
+		background-color: white;
+		position: absolute;
+		top: 170px;
+		left: 549px;
+		border-radius: 50px;
+		text-align: center;
+		font-size: 80px;
+		cursor: pointer;
+		font-family: "Lavishly Yours", cursive;
+		font-weight: 4;
+		color: black;
+	}
+
+	#pizza:hover{
+		scale: 1.05;
+		outline-style: double;
+		outline-color: grey;
+		outline-width: 4px;
+	}
+
+	#pizzaText{
+		font-family: "Special Gothic Expanded One", sans-serif;
+		font-size: 20px;
+		line-height: 300px;
+	}
+
+
+	#pie{
+		width: 350px;
+		height: 500px;
+		background-color: white;
+		position: absolute;
+		top: 170px;
+		left: 989px;
+		border-radius: 50px;
+		text-align: center;
+		font-size: 80px;
+		cursor: pointer;
+		font-family: "Lavishly Yours", cursive;
+		font-weight: 4;
+		color: black;
+	}
+
+	#pie:hover{
+		scale: 1.05;
+		outline-style: double;
+		outline-color: grey;
+		outline-width: 4px;
+
+	}
+
+	#pieText{
+		font-family: "Special Gothic Expanded One", sans-serif;
+		font-size: 20px;
+		line-height: 300px;
+	}
+
+	#rules{
+		font-size: 20px;
+		position: absolute;
+		left: 40px;
+		top: 100px;
+		background-color: lightgrey;
+		opacity: 80%;
+		border-radius: 5px;
+	}
+
+	#cookery{
+			width: 100%;
+			height: 3000px;
+			background-image: url(cookery2.jpg);
+			background-size: contain;
+			position: absolute;
+			left: 0px;
+			top: 1068px;
+			animation-duration: 2s;
+		}
+
+
+</style>
+</head>
+<body>
+
+<div id="background"></div>
+<center><div id="welcome">Welcome to the Kitchen!</div></center>
+<a href="tutorial.html"><div id="tutorial">tutorial</div></a>
+<div id="soup">Soup
+	<div id="soupText"></div>
+</div>
+<div id="pizza">Pizza
+	<div id="pizzaText"></div>
+</div>
+<div id="pie">Pie
+	<div id="pieText"></div>
+</div>
+<div id="rules">click to select recipe</div>
+<div id="cookery"></div>
+
+
+<script type="text/javascript">
+	
+	function openSoup(){
+	window.open("soup.html")
+	}
+		soup.addEventListener("click", 
+		function (){
+		cookery.style.animationName="slide2"
+		setTimeout(openSoup, 1000)
+		})
+
+		soup.addEventListener("mouseenter", function(){
+		soupText.innerText = "ingredients"
+		})
+
+		soup.addEventListener("mouseleave", function(){			soupText.innerText = ""
+		})
+
+	function openPizza(){
+	window.open("pizza.html")
+	}
+		pizza.addEventListener("click", 
+		function (){
+		cookery.style.animationName="slide2"
+		setTimeout(openPizza, 1000)
+		})
+
+		pizza.addEventListener("mouseenter", function(){
+			pizzaText.innerText = "ingredients"
+		})
+
+		pizza.addEventListener("mouseleave", function(){		pizzaText.innerText = ""
+		})
+
+	function openPie(){
+	window.open("pie.html")
+	}
+		pie.addEventListener("click", 
+		function (){
+		cookery.style.animationName="slide2"
+		setTimeout(openPie, 1000)
+		})
+
+		pie.addEventListener("mouseenter", function(){
+			pieText.innerText = "ingredients"
+		})
+
+		pie.addEventListener("mouseleave", function(){			pieText.innerText = ""
+		})
+
+
+
+</script>
+</body>
+</html>
