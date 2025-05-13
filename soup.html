@@ -14,9 +14,218 @@
 			top: 0;
 			animation-duration: 2s;
 		}
+
+		#white{
+			height: 745px;
+			top: 15px;
+			position: absolute;
+			width: 1410px;
+			left: 15px;
+			background-color: white;
+		}
+
+		#stove{
+			position: absolute;
+			height: 450px;
+			width: 450px;
+			background-size: contain;
+			background-image: url(stove-burner.png);
+			top: 440px;
+			left: 500px;
+		}
+
+		#emptyPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 220px;
+			left: 400px;
+			background-image: url(empty-pot.png);
+		}
+		
+		#waterPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(pot-water.png);
+			opacity: 0%;
+		}
+		
+		#carrotPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-carrots.png);
+			opacity: 0%;
+		}
+		
+		#celeryPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-celery.png);
+			opacity: 0%;
+		}
+		
+		#garlicPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-garlic.png);
+			opacity: 0%;
+		}
+		
+		#colorPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-color.png);
+			opacity: 0%;
+		}
+		
+		#rosemaryPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-rosemary.png);
+			opacity: 0%;
+		}
+		
+		#thymePot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-thyme.png);
+			opacity: 0%;
+		}
+		
+		#RpepperPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-Rpepper.png);
+			opacity: 0%;
+		}
+		
+		#saltPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-salt.png);
+			opacity: 0%;
+		}
+		
+		#pepperPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-pepper.png);
+			opacity: 0%;
+		}
+		
+		#pastaPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-pasta.png);
+			opacity: 0%;
+		}
+		
+		#chickenPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 190px;
+			left: 400px;
+			background-image: url(with-chicken.png);
+			opacity: 0%;
+		}
+		
+		#closedPot{
+			position: absolute;
+			height: 650px;
+			width: 650px;
+			background-size: contain;
+			top: 185px;
+			left: 400px;
+			background-image: url(closed-pot.png);
+			opacity: 0%;
+		}
+
+		#close{
+			position: absolute;
+			background-color: palevioletred;
+			height: 100px;
+			width: 300px;
+			top: 644px;
+			left: 30px;
+		}
+
 	</style>
 </head>
 <body>
 	
 	<div id="background"></div>
+	<div id="white"></div>
+	<div id="stove"></div>
+	<div id="emptyPot"></div>
+	<div id="waterPot"></div>
+	<div id="carrotPot"></div>
+	<div id="celeryPot"></div>
+	<div id="garlicPot"></div>
+	<div id="colorPot"></div>
+	<div id="rosemaryPot"></div>
+	<div id="thymePot"></div>
+	<div id="RpepperPot"></div>
+	<div id="saltPot"></div>
+	<div id="pepperPot"></div>
+	<div id="pastaPot"></div>
+	<div id="chickenPot"></div>
+	<div id="closedPot"></div>
+	<div id="close"></div>
+
+<script type="text/javascript">
+	
+	function addWater(){
+		close.addEventListener("click", function (){
+			closedPot.style.opacity = 1.0;});
+	}
+
+
+</script>
 </body>

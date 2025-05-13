@@ -102,8 +102,8 @@
 
 	#soupText{
 		font-family: "Special Gothic Expanded One", sans-serif;
-		font-size: 20px;
-		line-height: 300px;
+		font-size: 15px;
+		line-height: 100px;
 	}
 
 	#pizza{
@@ -112,7 +112,7 @@
 		background-color: white;
 		position: absolute;
 		top: 170px;
-		left: 549px;
+		left: 989px;
 		border-radius: 50px;
 		text-align: center;
 		font-size: 80px;
@@ -131,8 +131,8 @@
 
 	#pizzaText{
 		font-family: "Special Gothic Expanded One", sans-serif;
-		font-size: 20px;
-		line-height: 300px;
+		font-size: 15px;
+		line-height: 100px;
 	}
 
 
@@ -142,7 +142,7 @@
 		background-color: white;
 		position: absolute;
 		top: 170px;
-		left: 989px;
+		left: 549px;
 		border-radius: 50px;
 		text-align: center;
 		font-size: 80px;
@@ -162,8 +162,8 @@
 
 	#pieText{
 		font-family: "Special Gothic Expanded One", sans-serif;
-		font-size: 20px;
-		line-height: 300px;
+		font-size: 15px;
+		line-height: 100px;
 	}
 
 	#rules{
@@ -220,10 +220,11 @@
 		})
 
 		soup.addEventListener("mouseenter", function(){
-		soupText.innerText = "ingredients"
+		soupText.innerHTML = "Dish Name: Lana's Scrumptious Soup Difficulty: Easy"
 		})
 
-		soup.addEventListener("mouseleave", function(){			soupText.innerText = ""
+		soup.addEventListener("mouseleave", function(){			
+			soupText.innerText = ""
 		})
 
 	function openPizza(){
@@ -236,7 +237,7 @@
 		})
 
 		pizza.addEventListener("mouseenter", function(){
-			pizzaText.innerText = "ingredients"
+			pizzaText.innerText = "Dish Name: Lana's Precious Pizza Difficulty: Hard"
 		})
 
 		pizza.addEventListener("mouseleave", function(){		pizzaText.innerText = ""
@@ -252,7 +253,7 @@
 		})
 
 		pie.addEventListener("mouseenter", function(){
-			pieText.innerText = "ingredients"
+			pieText.innerText = "Dish Name: Lana's Picturesque Pie Difficulty: Medium"
 		})
 
 		pie.addEventListener("mouseleave", function(){			pieText.innerText = ""
