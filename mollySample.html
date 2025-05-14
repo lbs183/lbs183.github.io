@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+<style type="text/css">
+	.boxes{
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+</style>
+</head>
+<body>
+
+	<div class="boxes" id="box1">1</div>
+	<div class="boxes" id="box2">2</div>
+	<div class="boxes" id="box3">3</div>
+
+	<script type="text/javascript">
+
+let clickcounter=0
+		box1.addEventListener("click", function(){
+			console.log(box1.innerText)
+			clickcounter=clickcounter+1
+
+			if(clickcounter == box1.innerText){
+				alert("Nice work")
+
+			}
+
+
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}
+		})
+
+				box2.addEventListener("click", function(){
+				clickcounter=clickcounter+1
+
+			if(clickcounter == box2.innerText){
+				alert("Nice work")
+
+
+
+			}
+
+
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+
+			}
+		})
+
+
+		box3.addEventListener("click", function(){
+			clickcounter=clickcounter+1
+			if(clickcounter == box3.innerText){
+				alert("Nice work")
+
+
+			}
+
+
+			else{
+				alert("out of order!")
+			clickcounter=clickcounter-1
+
+			}
+		})
+		
+
+	</script>
+
+</body>
+</html>

@@ -21,7 +21,8 @@
 			position: absolute;
 			width: 1410px;
 			left: 15px;
-			background-color: white;
+			background-image: url(white.jpg);
+			background-size: contain;
 		}
 
 		#stove{
@@ -121,7 +122,7 @@
 			opacity: 0%;
 		}
 		
-		#RpepperPot{
+		#rPepperPot{
 			position: absolute;
 			height: 650px;
 			width: 650px;
@@ -178,22 +179,167 @@
 		
 		#closedPot{
 			position: absolute;
-			height: 650px;
-			width: 650px;
+			height: 673px;
+			width: 673px;
 			background-size: contain;
-			top: 185px;
-			left: 400px;
+			top: 170px;
+			left: 390px;
 			background-image: url(closed-pot.png);
 			opacity: 0%;
 		}
 
-		#close{
+		#cButton{
 			position: absolute;
 			background-color: palevioletred;
-			height: 100px;
-			width: 300px;
+			height: 70px;
+			width: 270px;
 			top: 644px;
 			left: 30px;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		#oButton{
+			position: absolute;
+			background-color: palevioletred;
+			height: 70px;
+			width: 270px;
+			top: 644px;
+			left: 1140px;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		#one{
+			position: absolute;
+			background-image: url(one.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 400px;
+			left: 50px;
+			cursor: pointer;
+		}
+
+		#two{
+			position: absolute;
+			background-image: url(two.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 245px;
+			left: 50px;
+			cursor: pointer;
+		}
+
+		#five{
+			position: absolute;
+			background-image: url(five.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 90px;
+			left: 50px;
+			cursor: pointer;
+		}
+
+		#six{
+			position: absolute;
+			background-image: url(six.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 90px;
+			left: 205px;
+			cursor: pointer;
+		}
+
+		#seven{
+			position: absolute;
+			background-image: url(seven.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 90px;
+			left: 360px;
+			cursor: pointer;
+		}
+
+		#nine{
+			position: absolute;
+			background-image: url(nine.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 90px;
+			left: 515px;
+			cursor: pointer;
+		}
+
+		#eleven{
+			position: absolute;
+			background-image: url(eleven.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 90px;
+			left: 670px;
+			cursor: pointer;
+		}
+
+		#twelve{
+			position: absolute;
+			background-image: url(twelve.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 90px;
+			left: 825px;
+			cursor: pointer;
+		}
+
+		#fourt{
+			position: absolute;
+			background-image: url(fourt.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 90px;
+			left: 980px;
+			cursor: pointer;
+		}
+
+		#fift{
+			position: absolute;
+			background-image: url(fift.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 90px;
+			left: 1135px;
+			cursor: pointer;
+		}
+
+		#sixteen{
+			position: absolute;
+			background-image: url(sixteen.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 245px;
+			left: 1135px;
+			cursor: pointer;
+		}
+
+		#waterjug{
+			position: absolute;
+			background-image: url(water.png);
+			height: 150px;
+			width: 150px;
+			background-size: contain;
+			top: 400px;
+			left: 1135px;
+			cursor: pointer;
 		}
 
 	</style>
@@ -205,26 +351,77 @@
 	<div id="stove"></div>
 	<div id="emptyPot"></div>
 	<div id="waterPot"></div>
-	<div id="carrotPot"></div>
 	<div id="celeryPot"></div>
+	<div id="carrotPot"></div>
 	<div id="garlicPot"></div>
 	<div id="colorPot"></div>
 	<div id="rosemaryPot"></div>
 	<div id="thymePot"></div>
-	<div id="RpepperPot"></div>
+	<div id="rPepperPot"></div>
 	<div id="saltPot"></div>
 	<div id="pepperPot"></div>
 	<div id="pastaPot"></div>
 	<div id="chickenPot"></div>
 	<div id="closedPot"></div>
-	<div id="close"></div>
+	<div id="cButton">CLOSE POT</div>
+	<div id="oButton">OPEN POT</div>
+	<div id="one">8</div>
+	<div id="two">12</div>
+	<div id="five">2</div>
+	<div id="six">3</div>
+	<div id="seven">7</div>
+	<div id="nine">6</div>
+	<div id="eleven">10</div>
+	<div id="twelve">11</div>
+	<div id="fourt">9</div>
+	<div id="fift">5</div>
+	<div id="sixteen">4</div>
+	<div id="waterjug">1</div>
 
 <script type="text/javascript">
 	
-	function addWater(){
-		close.addEventListener("click", function (){
-			closedPot.style.opacity = 1.0;});
-	}
+let clickcounter=0	
+		cButton.addEventListener("click", function (){
+			closedPot.style.opacity = 1.0;})
+
+		oButton.addEventListener("click", function(){
+			closedPot.style.opacity = 0.})
+
+		waterjug.addEventListener("click", function(){
+			waterPot.style.opacity = 1.0;})
+
+		one.addEventListener("click", function (){
+			rPepperPot.style.opacity = 1.0;})
+
+		two.addEventListener("click", function (){
+			chickenPot.style.opacity = 1.0;})
+
+		five.addEventListener("click", function (){
+			celeryPot.style.opacity = 1.0;})
+
+		six.addEventListener("click", function (){
+			carrotPot.style.opacity = 1.0;})
+
+		seven.addEventListener("click", function (){
+			thymePot.style.opacity = 1.0;})
+
+		nine.addEventListener("click", function (){
+			rosemaryPot.style.opacity = 1.0;})
+
+		eleven.addEventListener("click", function (){
+			pepperPot.style.opacity = 1.0;})
+
+		twelve.addEventListener("click", function (){
+			pastaPot.style.opacity = 1.0;})
+
+		fourt.addEventListener("click", function (){
+			saltPot.style.opacity = 1.0;})
+
+		fift.addEventListener("click", function (){
+			colorPot.style.opacity = 1.0;})
+
+		sixteen.addEventListener("click", function (){
+			garlicPot.style.opacity = 1.0;})
 
 
 </script>
