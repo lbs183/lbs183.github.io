@@ -14,9 +14,457 @@
 			top: 0;
 			animation-duration: 2s;
 		}
+
+		#white{
+			height: 745px;
+			top: 15px;
+			position: absolute;
+			width: 1410px;
+			left: 15px;
+			background-image: url(bakery.jpg);
+			background-size: contain;
+		}
+
+		#emptyBowl{
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			left: 530px;
+			top: 400px;
+			background-size: contain;
+			background-image: url(empty-bowl.png);
+		}
+
+		#appleBowl{
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			left: 530px;
+			top: 400px;
+			background-size: contain;
+			background-image: url(apple-bowl.png);
+			opacity: 0%;
+		}
+
+		#bsBowl{
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			left: 530px;
+			top: 400px;
+			background-size: contain;
+			background-image: url(brownsugar-bowl.png);
+			opacity: 0%;
+		}
+
+		#cinnaBowl{
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			left: 530px;
+			top: 400px;
+			background-size: contain;
+			background-image: url(cinna-bowl.png);
+			opacity: 0%;
+		}
+
+		#flourBowl{
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			left: 530px;
+			top: 400px;
+			background-size: contain;
+			background-image: url(flour-bowl.png);
+			opacity: 0%;
+		}
+
+		#lemonBowl{
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			left: 530px;
+			top: 400px;
+			background-size: contain;
+			background-image: url(lemon-bowl.png);
+			opacity: 0%;
+			animation-duration: 2s;
+		}
+
+		@keyframes spin{
+			0%{
+				transform: rotate(0deg);
+			}
+
+			100%{
+				transform: rotate(720deg);
+				opacity: 0%;
+			}
+		}
+
+		#nutmegBowl{
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			left: 530px;
+			top: 400px;
+			background-size: contain;
+			background-image: url(nutmeg-bowl.png);
+			opacity: 0%;
+		}
+
+		#sugarBowl{
+			height: 420px;
+			width: 420px;
+			position: absolute;
+			left: 530px;
+			top: 400px;
+			background-size: contain;
+			background-image: url(sugar-bowl.png);
+			opacity: 0%;
+		}
+
+		#mix{
+			height: 100px;
+			width: 200px;
+			background-color: palegoldenrod;
+			position: absolute;
+			top: 650px;
+			left: 25px;
+			font-size: 90px;
+			text-align: center;
+		}
+
+		#crust{
+			position: absolute;
+			width: 440px;
+			height: 440px;
+			top: 320px;
+			left: 510px;
+			background-size: contain;
+			background-image: url(empty-crust.png);
+			opacity: 0%;
+			animation-duration: 2s;
+		}
+
+		@keyframes turn{
+			0%{
+				transform: rotate(0deg);
+			}
+
+			30%{
+				opacity: 20%;
+			}
+
+			100%{
+				transform: rotate(720deg);
+				opacity: 100%;
+			}
+		}
+
+		#filledPie{
+			position: absolute;
+			width: 440px;
+			height: 440px;
+			top: 320px;
+			left: 510px;
+			background-size: contain;
+			background-image: url(filled-crust.png);
+			opacity: 0%;
+			animation-duration: 3s;
+		}
+
+		#toppedPie{
+			position: absolute;
+			width: 440px;
+			height: 440px;
+			top: 320px;
+			left: 510px;
+			background-size: contain;
+			background-image: url(top-crust.png);
+			opacity: 0%;
+			animation-duration: 2s;
+		}
+
+		@keyframes fly{
+			0%{
+				left: 510px;
+			}
+
+			100%{
+				left: -800px;
+			}
+		}
+
+		#bakedPie{
+			position: absolute;
+			width: 440px;
+			height: 440px;
+			top: 320px;
+			left: 510px;
+			background-size: contain;
+			background-image: url(baked-pie.png);
+			opacity: 0%;
+			animation-duration: 3s;
+		}
+
+		@keyframes enter{
+			0%{
+				left: 1500px;
+				opacity: 0%;
+			}
+
+			80%{
+				left: 1500px;
+				opacity: 0%;
+			}
+
+			100%{
+				left: 510px;
+				opacity: 100%;
+			}
+		}
+
+		#apples{
+			height: 100px;
+			width: 100px;
+			background-size: contain;
+			background-image: url(greenapple.png);
+			top: 300px;
+			left: 400px;
+			position: absolute;
+		}
+
+		#cinnamon{
+			height: 100px;
+			width: 100px;
+			background-size: contain;
+			background-image: url(cinnamon.png);
+			top: 200px;
+			left: 500px;
+			position: absolute;
+		}
+
+		#brown{
+			height: 100px;
+			width: 90px;
+			background-size: contain;
+			background-image: url(brown.png);
+			top: 100px;
+			left: 600px;
+			position: absolute;
+		}
+
+		#lemon{
+			height: 100px;
+			width: 100px;
+			background-size: contain;
+			background-image: url(lemon.png);
+			top: 100px;
+			left: 700px;
+			position: absolute;
+		}
+
+		#flour{
+			height: 100px;
+			width: 100px;
+			background-size: contain;
+			background-image: url(flour.png);
+			top: 100px;
+			left: 800px;
+			position: absolute;
+		}
+
+		#sugar{
+			height: 100px;
+			width: 100px;
+			background-size: contain;
+			background-image: url(sugar.png);
+			top: 200px;
+			left: 900px;
+			position: absolute;
+		}
+
+		#nutmeg{
+			height: 100px;
+			width: 100px;
+			background-size: contain;
+			background-image: url(nutmeg.png);
+			top: 300px;
+			left: 1000px;
+			position: absolute;
+		}
+
+		#filling{
+			height: 300px;
+			width: 300px;
+			background-size: contain;
+			background-image: url(filling.png);
+			top: 460px;
+			left: 1100px;
+			position: absolute;
+			opacity: 0.0;
+			animation-duration: 2s;
+		}
+
+		@keyframes appear{
+			0%{
+				left: 500px;
+				top: 430px;
+			}
+			100%{
+				left: 1100px;
+				top: 460px;
+				opacity: 100%;
+				transform: rotate(360deg);
+			}
+		}
+
+		#button{
+			height: 180px;
+			width: 180px;
+			border-radius: 50%;
+			background-color: palegoldenrod;
+			left: 25px;
+			top: 25px;
+			position: absolute;
+			text-align: center;
+			font-size: 70px;
+			line-height: 170px;
+			opacity: 0%;
+		}
+
+		#bake{
+			height: 100px;
+			width: 300px;
+			background-color: palegoldenrod;
+			position: absolute;
+			top: 25px;
+			left: 1115px;
+			font-size: 90px;
+			text-align: center;
+			opacity: 0%;
+		}
+
+
 	</style>
 </head>
 <body>
 	
 	<div id="background"></div>
+	<div id="white"></div>
+	<div id="emptyBowl"></div>
+	<div id="appleBowl"></div>
+	<div id="sugarBowl"></div>
+	<div id="bsBowl"></div>
+	<div id="flourBowl"></div>
+	<div id="cinnaBowl"></div>
+	<div id="nutmegBowl"></div>
+	<div id="lemonBowl"></div>
+	<div id="crust"></div>
+	<div id="filledPie"></div>
+	<div id="toppedPie"></div>
+	<div id="bakedPie"></div>
+	<div id="mix">MIX</div>
+	<div id="apples">1</div>
+	<div id="brown">3</div>
+	<div id="cinnamon">5</div>
+	<div id="flour">4</div>
+	<div id="lemon">7</div>
+	<div id="nutmeg">6</div>
+	<div id="sugar">2</div>
+	<div id="filling"></div>
+	<div id="button">crust</div>
+	<div id="bake">BAKE</div>
+
+
+	<script type="text/javascript">
+		
+		function remove (){
+			document.getElementById('lemonBowl').style.display='none';}
+		function pie(){
+			document.getElementById('crust').style.opacity='1.0'}
+		function arrive(){
+			document.getElementById('filling').style.opacity='1.0'}
+		function go(){
+			document.getElementById('toppedPie').style.opacity='1.0'}
+		function goes(){
+			document.getElementById('filledPie').style.display='none'}
+		function leave(){
+			document.getElementById('toppedPie').style.display='none'}
+		function stay(){
+			document.getElementById('bakedPie').style.opacity='1.0'}
+		function poe(){
+			document.getElementById('crust').style.display='none'}
+		function fade(){
+			document.getElementById('bake').style. display='none'
+		}
+
+		mix.addEventListener("click", function(){
+			lemonBowl.style.animationName="spin"
+			crust.style.animationName="turn"
+			filling.style.animationName="appear"
+			setTimeout(remove, 2000)
+			setTimeout(pie, 2000)
+			setTimeout(arrive, 2000)})
+
+		apples.addEventListener("click", function(){
+			appleBowl.style.opacity = 1.0;
+			emptyBowl.style.opacity = 0.0})
+
+		brown.addEventListener("click", function(){
+			bsBowl.style.opacity = 1.0;
+			sugarBowl.style.opacity = 0.0})
+
+		cinnamon.addEventListener("click", function(){
+			cinnaBowl.style.opacity = 1.0;
+			flourBowl.style.opacity = 0.0})
+
+		flour.addEventListener("click", function(){
+			flourBowl.style.opacity = 1.0;
+			bsBowl.style.opacity = 0.0})
+
+		lemon.addEventListener("click", function(){
+			lemonBowl.style.opacity = 1.0;
+			nutmegBowl.style.opacity = 0.0;})
+
+		nutmeg.addEventListener("click", function(){
+			nutmegBowl.style.opacity = 1.0;
+			cinnaBowl.style.opacity = 0.0})
+
+		sugar.addEventListener("click", function(){
+			sugarBowl.style.opacity = 1.0;
+			appleBowl.style.opacity = 0.0})
+
+		filling.addEventListener("click", function(){
+			filledPie.style.opacity = 1.0;
+			button.style.opacity = 1.0;
+			setTimeout(poe, 1)})
+
+		button.addEventListener('click', function(){
+			toppedPie.style.animationName="turn";
+			setTimeout(goes, 2000)
+			filledPie.style.animationName="spin";
+			setTimeout(go, 2000)
+			apples.style.opacity = 0.0;
+			brown.style.opacity = 0.0;
+			sugar.style.opacity = 0.0;
+			nutmeg.style.opacity = 0.0;
+			lemon.style.opacity = 0.0;
+			cinnamon.style.opacity = 0.0;
+			flour.style.opacity = 0.0;
+			filling.style.opacity = 0.0;
+			button.style.opacity = 0.0;
+			mix.style.opacity = 0.0;
+			bake.style.opacity = 1.0;})
+
+		bake.addEventListener("click", function(){
+			toppedPie.style.animationName="fly"
+			setTimeout(leave, 2000)
+			bakedPie.style.animationName="enter"
+			setTimeout(stay, 2000)
+			setTimeout(fade, 1)
+		})
+
+	</script>
 </body>
