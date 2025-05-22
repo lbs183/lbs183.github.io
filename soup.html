@@ -381,47 +381,140 @@
 <script type="text/javascript">
 	
 let clickcounter=0	
+
 		cButton.addEventListener("click", function (){
-			closedPot.style.opacity = 1.0;})
+			if(clickcounter==12){
+				closedPot.style.opacity = 1.0;
+				alert("cooking!")}
+
+			else{
+				alert("not yet...")}
+			})
 
 		oButton.addEventListener("click", function(){
 			closedPot.style.opacity = 0.})
 
 		waterjug.addEventListener("click", function(){
-			waterPot.style.opacity = 1.0;})
+			console.log(waterjug.innerText)
+			clickcounter=clickcounter+1
+
+			if(clickcounter == waterjug.innerText){
+				waterPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		one.addEventListener("click", function (){
-			rPepperPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == one.innerText){
+				rPepperPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		two.addEventListener("click", function (){
-			chickenPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == two.innerText){
+				chickenPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		five.addEventListener("click", function (){
-			celeryPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == five.innerText){
+				celeryPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		six.addEventListener("click", function (){
-			carrotPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == six.innerText){
+				carrotPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		seven.addEventListener("click", function (){
-			thymePot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == seven.innerText){
+				thymePot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		nine.addEventListener("click", function (){
-			rosemaryPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == nine.innerText){
+				rosemaryPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		eleven.addEventListener("click", function (){
-			pepperPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == eleven.innerText){
+				pepperPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		twelve.addEventListener("click", function (){
-			pastaPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == twelve.innerText){
+				pastaPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		fourt.addEventListener("click", function (){
-			saltPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == fourt.innerText){
+				saltPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		fift.addEventListener("click", function (){
-			colorPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == fift.innerText){
+				colorPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		sixteen.addEventListener("click", function (){
-			garlicPot.style.opacity = 1.0;})
+			clickcounter=clickcounter+1
+			if(clickcounter == sixteen.innerText){
+				garlicPot.style.opacity = 1.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 
 </script>

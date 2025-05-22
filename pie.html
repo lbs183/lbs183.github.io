@@ -379,7 +379,9 @@
 
 
 	<script type="text/javascript">
-		
+
+let clickcounter=0		
+	
 		function remove (){
 			document.getElementById('lemonBowl').style.display='none';}
 		function pie(){
@@ -401,40 +403,104 @@
 		}
 
 		mix.addEventListener("click", function(){
-			lemonBowl.style.animationName="spin"
-			crust.style.animationName="turn"
-			filling.style.animationName="appear"
-			setTimeout(remove, 2000)
-			setTimeout(pie, 2000)
-			setTimeout(arrive, 2000)})
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+			if(clickcounter==8){
+				lemonBowl.style.animationName="spin"
+				crust.style.animationName="turn"
+				filling.style.animationName="appear"
+				setTimeout(remove, 2000)
+				setTimeout(pie, 2000)
+				setTimeout(arrive, 2000)}
+
+			else{
+				alert("not yet...")
+				clickcounter=clickcounter-1}
+			})
 
 		apples.addEventListener("click", function(){
-			appleBowl.style.opacity = 1.0;
-			emptyBowl.style.opacity = 0.0})
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+			if(clickcounter == apples.innerText){
+				appleBowl.style.opacity = 1.0;
+				emptyBowl.style.opacity = 0.0;
+			}
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		brown.addEventListener("click", function(){
-			bsBowl.style.opacity = 1.0;
-			sugarBowl.style.opacity = 0.0})
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+			if(clickcounter == brown.innerText){
+				bsBowl.style.opacity = 1.0;
+				sugarBowl.style.opacity = 0.0}
+
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		cinnamon.addEventListener("click", function(){
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+			if(clickcounter == cinnamon.innerText){
 			cinnaBowl.style.opacity = 1.0;
-			flourBowl.style.opacity = 0.0})
+			flourBowl.style.opacity = 0.0}
+
+			else{
+				alert("out of order!")
+				clickcounter=clickcounter-1
+			}})
 
 		flour.addEventListener("click", function(){
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+			if(clickcounter == flour.innerText){
 			flourBowl.style.opacity = 1.0;
-			bsBowl.style.opacity = 0.0})
+			bsBowl.style.opacity = 0.0}
+
+			else{
+				alert("out of order!")
+			clickcounter=clickcounter-1}
+			})
 
 		lemon.addEventListener("click", function(){
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+			if(clickcounter == lemon.innerText){
 			lemonBowl.style.opacity = 1.0;
-			nutmegBowl.style.opacity = 0.0;})
+			nutmegBowl.style.opacity = 0.0;}
+
+			else{
+				alert("out of order!")
+			clickcounter=clickcounter-1}
+			})
 
 		nutmeg.addEventListener("click", function(){
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+			if(clickcounter == nutmeg.innerText){
 			nutmegBowl.style.opacity = 1.0;
-			cinnaBowl.style.opacity = 0.0})
+			cinnaBowl.style.opacity = 0.0}
+
+			else{
+				alert("out of order!")
+			clickcounter=clickcounter-1}
+			})
 
 		sugar.addEventListener("click", function(){
+			clickcounter=clickcounter+1
+			console.log(clickcounter)
+			if(clickcounter == sugar.innerText){
 			sugarBowl.style.opacity = 1.0;
-			appleBowl.style.opacity = 0.0})
+			appleBowl.style.opacity = 0.0}
+
+			else{
+				alert("out of order!")
+			clickcounter=clickcounter-1}
+			})
 
 		filling.addEventListener("click", function(){
 			filledPie.style.opacity = 1.0;
