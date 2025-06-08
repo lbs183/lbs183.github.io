@@ -187,6 +187,16 @@
 			animation-duration: 2s;
 		}
 
+	#construction{
+		height: 400px;
+		width: 400px;
+		background-image: url(underconstruction.png);
+		background-size: contain;
+		left: 965px;
+		top: 250px;
+		position: absolute;
+	}
+
 
 </style>
 </head>
@@ -206,6 +216,7 @@
 </div>
 <div id="rules">click to select recipe</div>
 <div id="cookery"></div>
+<div id="construction"></div>
 
 
 <script type="text/javascript">
@@ -244,7 +255,7 @@
 		})
 
 	function openPie(){
-	window.open("pie.html")
+	window.open("recipes.html")
 	}
 		pie.addEventListener("click", 
 		function (){
